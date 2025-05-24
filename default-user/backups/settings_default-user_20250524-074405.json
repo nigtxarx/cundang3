@@ -17,11 +17,13 @@
         "AlertWI_机动战士高达-SEED V1.2.png": "true",
         "AlertRegex_机动战士高达-SEED V1.2.png": "true",
         "AlertWI_全是萝莉的世界而我拥有无上权力.png": "true",
-        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true"
+        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true",
+        "AlertWI_全是萝莉的世界而我拥有无上权力1.png": "true",
+        "AlertRegex_全是萝莉的世界而我拥有无上权力1.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "林段",
-    "active_character": "全是萝莉的世界而我拥有无上权力.png",
+    "active_character": null,
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -1742,7 +1744,8 @@
             "--老人滚动5天际模拟器v0.37--.png",
             "被程明催眠的淫乱世界.png",
             "机动战士高达-SEED V1.2.png",
-            "全是萝莉的世界而我拥有无上权力.png"
+            "全是萝莉的世界而我拥有无上权力.png",
+            "全是萝莉的世界而我拥有无上权力1.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -1938,10 +1941,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 1169,
-                "LAST_RECEIVE_CHARS": 1803,
-                "LAST_SEND_TOKENS": 22160,
-                "LAST_SEND_CHARS": 39622
+                "LAST_RECEIVE_TOKENS": 1401,
+                "LAST_RECEIVE_CHARS": 1909,
+                "LAST_SEND_TOKENS": 31797,
+                "LAST_SEND_CHARS": 52607
             }
         },
         "attachments": [],
@@ -2097,8 +2100,9 @@
         "万界穿越系统2.0.png": [],
         "战败牧场.png": [],
         "机动战士高达-SEED V1.2.png": [],
+        "全是萝莉的世界而我拥有无上权力.png": [],
         "default_Assistant.png": [],
-        "全是萝莉的世界而我拥有无上权力.png": []
+        "全是萝莉的世界而我拥有无上权力1.png": []
     },
     "nai_settings": {
         "temperature": 1.5,

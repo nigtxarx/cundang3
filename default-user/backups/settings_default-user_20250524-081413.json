@@ -5,7 +5,7 @@
         "WelcomePage_RecentChatsHidden": "true",
         "LNavOpened": "true",
         "WINavOpened": "true",
-        "NavOpened": "false",
+        "NavOpened": "true",
         "AlertWI_--老人滚动5天际模拟器v0.37--.png": "true",
         "AlertRegex_--老人滚动5天际模拟器v0.37--.png": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -1938,10 +1938,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 1169,
-                "LAST_RECEIVE_CHARS": 1803,
-                "LAST_SEND_TOKENS": 22160,
-                "LAST_SEND_CHARS": 39622
+                "LAST_RECEIVE_TOKENS": 2,
+                "LAST_RECEIVE_CHARS": 3,
+                "LAST_SEND_TOKENS": 22141,
+                "LAST_SEND_CHARS": 39577
             }
         },
         "attachments": [],
@@ -2097,8 +2097,8 @@
         "万界穿越系统2.0.png": [],
         "战败牧场.png": [],
         "机动战士高达-SEED V1.2.png": [],
-        "default_Assistant.png": [],
-        "全是萝莉的世界而我拥有无上权力.png": []
+        "全是萝莉的世界而我拥有无上权力.png": [],
+        "default_Assistant.png": []
     },
     "nai_settings": {
         "temperature": 1.5,

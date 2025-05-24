@@ -17,11 +17,13 @@
         "AlertWI_机动战士高达-SEED V1.2.png": "true",
         "AlertRegex_机动战士高达-SEED V1.2.png": "true",
         "AlertWI_全是萝莉的世界而我拥有无上权力.png": "true",
-        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true"
+        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true",
+        "AlertWI_全是萝莉的世界而我拥有无上权力1.png": "true",
+        "AlertRegex_全是萝莉的世界而我拥有无上权力1.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "林段",
-    "active_character": "全是萝莉的世界而我拥有无上权力.png",
+    "active_character": "全是萝莉的世界而我拥有无上权力1.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -1314,7 +1316,7 @@
             "isExtensionAble": true,
             "isAiReadTable": true,
             "isAiWriteTable": true,
-            "isTableToChat": false,
+            "isTableToChat": true,
             "enableHistory": true,
             "use_main_api": true,
             "custom_temperature": 1,
@@ -1736,13 +1738,33 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 1
+            },
+            {
+                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2,
+                    6
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
             "--老人滚动5天际模拟器v0.37--.png",
             "被程明催眠的淫乱世界.png",
             "机动战士高达-SEED V1.2.png",
-            "全是萝莉的世界而我拥有无上权力.png"
+            "全是萝莉的世界而我拥有无上权力.png",
+            "全是萝莉的世界而我拥有无上权力1.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -1938,10 +1960,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 1169,
-                "LAST_RECEIVE_CHARS": 1803,
-                "LAST_SEND_TOKENS": 22160,
-                "LAST_SEND_CHARS": 39622
+                "LAST_RECEIVE_TOKENS": 10,
+                "LAST_RECEIVE_CHARS": 10,
+                "LAST_SEND_TOKENS": 26021,
+                "LAST_SEND_CHARS": 44532
             }
         },
         "attachments": [],
@@ -2097,8 +2119,9 @@
         "万界穿越系统2.0.png": [],
         "战败牧场.png": [],
         "机动战士高达-SEED V1.2.png": [],
+        "全是萝莉的世界而我拥有无上权力.png": [],
         "default_Assistant.png": [],
-        "全是萝莉的世界而我拥有无上权力.png": []
+        "全是萝莉的世界而我拥有无上权力1.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -3502,7 +3525,7 @@
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
         "pollinations_model": "openai",
-        "custom_model": "[PAY]gemini-2.5-pro-preview-05-06",
+        "custom_model": "[PAY]gemini-2.5-pro-preview-03-25",
         "custom_url": "https://night38652-lunxun.hf.space/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
