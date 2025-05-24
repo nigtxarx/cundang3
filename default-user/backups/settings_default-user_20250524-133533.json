@@ -5,7 +5,7 @@
         "WelcomePage_RecentChatsHidden": "true",
         "LNavOpened": "false",
         "WINavOpened": "true",
-        "NavOpened": "true",
+        "NavOpened": "false",
         "AlertWI_--老人滚动5天际模拟器v0.37--.png": "true",
         "AlertRegex_--老人滚动5天际模拟器v0.37--.png": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -2040,10 +2040,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 411,
-                "LAST_RECEIVE_CHARS": 593,
-                "LAST_SEND_TOKENS": 22808,
-                "LAST_SEND_CHARS": 45585
+                "LAST_RECEIVE_TOKENS": 506,
+                "LAST_RECEIVE_CHARS": 736,
+                "LAST_SEND_TOKENS": 19201,
+                "LAST_SEND_CHARS": 40332
             }
         },
         "attachments": [],
