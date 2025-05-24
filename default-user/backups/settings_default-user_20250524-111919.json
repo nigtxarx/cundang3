@@ -5,7 +5,7 @@
         "WelcomePage_RecentChatsHidden": "true",
         "LNavOpened": "false",
         "WINavOpened": "true",
-        "NavOpened": "true",
+        "NavOpened": "false",
         "AlertWI_--老人滚动5天际模拟器v0.37--.png": "true",
         "AlertRegex_--老人滚动5天际模拟器v0.37--.png": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -14,10 +14,10 @@
         "SelectedNavTab": "rm_button_characters",
         "AlertWI_灰风1.1.png": "true",
         "AlertWI_战败牧场.png": "true",
-        "AlertWI_全是萝莉的世界而我拥有无上权力.png": "true",
-        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true",
         "AlertWI_机动战士高达-SEED V1.2.png": "true",
-        "AlertRegex_机动战士高达-SEED V1.2.png": "true"
+        "AlertRegex_机动战士高达-SEED V1.2.png": "true",
+        "AlertWI_全是萝莉的世界而我拥有无上权力.png": "true",
+        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "林段",
@@ -1838,13 +1838,32 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 5
+            },
+            {
+                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2,
+                    6
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
             "--老人滚动5天际模拟器v0.37--.png",
             "被程明催眠的淫乱世界.png",
-            "全是萝莉的世界而我拥有无上权力.png",
-            "机动战士高达-SEED V1.2.png"
+            "机动战士高达-SEED V1.2.png",
+            "全是萝莉的世界而我拥有无上权力.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -2040,10 +2059,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 2,
-                "LAST_RECEIVE_CHARS": 3,
-                "LAST_SEND_TOKENS": 34355,
-                "LAST_SEND_CHARS": 68933
+                "LAST_RECEIVE_TOKENS": 19,
+                "LAST_RECEIVE_CHARS": 22,
+                "LAST_SEND_TOKENS": 35473,
+                "LAST_SEND_CHARS": 71205
             }
         },
         "attachments": [],
@@ -2198,9 +2217,9 @@
         "魔法少女和狐妖的堕落.png": [],
         "万界穿越系统2.0.png": [],
         "战败牧场.png": [],
+        "机动战士高达-SEED V1.2.png": [],
         "default_Assistant.png": [],
-        "全是萝莉的世界而我拥有无上权力.png": [],
-        "机动战士高达-SEED V1.2.png": []
+        "全是萝莉的世界而我拥有无上权力.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -2667,11 +2686,10 @@
                 "marker": false,
                 "name": "Nova⭐格式强调(看说明)",
                 "role": "system",
-                "content": "{{//把你最终输出的完整结果，去掉内容保留标签粘贴进来}}\n\n<format_confirmation_check>\n\n  注意：在输出完成后，请回顾并确认是否按照以下格式正确输出了内容（确认过程和结果无需展示，若有错误请直接更正）：\n\n{{正文等内容}}\n<StatusBlocks>\n <角色名>{{角色名}}</角色名>\n <所属>{{所属}}</所属>\n <基因>{{基因}}</基因>\n <外观>{{外观}}</外观>\n <日期>{{日期}}</日期>\n <状态>{{状态}}</状态>\n <人员>{{人员}}</人员>\n <声望扎夫特>{{声望扎夫特}}</声望扎夫特> <!-- 数值范围: -100 ~ 100 -->\n <声望地球联合>{{声望地球联合}}</声望地球联合> <!-- 数值范围: -100 ~ 100 -->\n <声望奥布>{{声望奥布}}</声望奥布> <!-- 数值范围: -100 ~ 100 -->\n <资金>{{资金}}</资金>\n <物品>{{物品}}</物品>\n <位置>{{位置}}</位置>\n <想法>{{想法}}</想法>\n <机体名>{{机体名}}</机体名>\n <机体型号>{{机体型号}}</机体型号>\n <涂装>{{涂装}}</涂装>\n <机体位置>{{机体位置}}</机体位置>\n <区域>{{区域}}</区域>\n <动力>{{动力}}</动力>\n <动力类型>{{动力类型}}</动力类型>\n <能量>{{能量}}</能量> <!-- 例如: 100 或 25 或 5 -->\n <装甲>{{装甲}}</装甲>\n <装甲类型>{{装甲类型}}</装甲类型>\n <损伤>{{损伤}}</损伤>\n <损伤类型>{{损伤类型}}</损伤类型>\n <固武>{{固武}}</固武>\n <外挂>{{外挂}}</外挂>\n <系统>{{系统}}</系统>\n <驾驶>{{驾驶}}</驾驶>\n <建议>{{建议}}</建议>\n <任务名>{{任务名}}</任务名>\n <任务类型>{{任务类型}}</任务类型>\n <任务目标>{{任务目标}}</任务目标>\n <关系列表>\n {{关系列表}} <!-- 例如: <li>拉克丝·克莱因：<span style=\"color:#ffc0cb;\">爱恋</span> (100)</li> -->\n </关系列表>\n <行动列表>\n {{行动列表}} <!-- 例如: <li>1. [行动] 驾驶强袭自由出击</li><li>2. [通讯] 与阿斯兰确认汇合点</li> -->\n </行动列表>\n</StatusBlocks>\n<details><summary>总结</summary>\n  {{总结}}\n</details>\n<details>\n  <summary>Nova</summary>\n  {{Nova}}\n</details>\n<对审查的战书>\n  {{对审查的战书}}\n</对审查的战书>\n\n</format_confirmation_check>",
+                "content": "{{//把你最终输出的完整结果，去掉内容保留标签粘贴进来}}\n\n<format_confirmation_check>\n\n  注意：在输出完成后，请回顾并确认是否按照以下格式正确输出了内容（确认过程和结果无需展示，若有错误请直接更正）：\n\n{{正文等内容}}\n<details><summary>总结</summary>\n  {{总结}}\n</details>\n<details>\n  <summary>Nova</summary>\n  {{Nova}}\n</details>\n<对审查的战书>\n  {{对审查的战书}}\n</对审查的战书>\n\n</format_confirmation_check>",
                 "injection_position": 0,
                 "injection_depth": 4,
-                "forbid_overrides": false,
-                "injection_order": 100
+                "forbid_overrides": false
             },
             {
                 "identifier": "9381e8b6-00b1-443c-9500-f089a3dcb79f",
@@ -3117,7 +3135,7 @@
                     },
                     {
                         "identifier": "835fe974-b281-4077-9ef1-10ad92ce65ba",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "04666a5c-81da-4788-9481-6b21eaf41dc5",
