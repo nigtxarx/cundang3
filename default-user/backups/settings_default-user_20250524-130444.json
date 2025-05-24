@@ -335,7 +335,7 @@
         },
         "reasoning": {
             "name": "DeepSeek",
-            "auto_parse": false,
+            "auto_parse": true,
             "add_to_prompts": false,
             "auto_expand": false,
             "show_hidden": false,
@@ -1746,7 +1746,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -1757,7 +1757,7 @@
             {
                 "id": "5091df3f-30b0-4fd4-bfc8-679cd587e3c2",
                 "scriptName": "【Nova lite】(配合转述)隐藏用户输入",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/.*/s",
                 "replaceString": "",
@@ -1774,7 +1774,7 @@
             {
                 "id": "bb5d0747-9f92-4ebc-aea9-16f3bfb50f65",
                 "scriptName": "【Nova lite】(配抗空回)去掉战书",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<challenge_to_censorship>.*</challenge_to_censorship>/gs",
                 "replaceString": "",
@@ -1797,7 +1797,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -1814,7 +1814,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -1831,13 +1831,132 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 5
+            },
+            {
+                "id": "9bbb36da-7b2a-4df0-b7fd-70a6799c4c43",
+                "scriptName": "【DepressIon】剧情推进1 v2.5",
+                "findRegex": "/<plot>([\\s\\S]*?)</plot>/g",
+                "replaceString": "<details>\n<summary>剧情</summary>\n$1\n</details>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "bae1a4ae-4043-46ca-b018-a26b2871c140",
+                "scriptName": "【DepressIon】小总结1 v2.5",
+                "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/g",
+                "replaceString": "<summary>\n$1\n</summary>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 12,
+                "maxDepth": null
+            },
+            {
+                "id": "73362b74-44cf-4c51-975a-1354f5ac4d9e",
+                "scriptName": "【DepressIon】剧情推进2 v2.5",
+                "findRegex": "/<plot>([\\s\\S]*?)</plot>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 12,
+                "maxDepth": null
+            },
+            {
+                "id": "98b6666a-a954-4100-afc0-649adaa36a79",
+                "scriptName": "【DepressIon】小总结2 v2.5",
+                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/g",
+                "replaceString": "<details>\n<summary>摘要</summary>\n$1\n</details>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "96eab42f-ddca-4d28-ac70-9c7f1f6b4bd7",
+                "scriptName": "【DepressIon】修改用户输入 1.2",
+                "findRegex": "/([\\s\\S]*)/",
+                "replaceString": "// $1\n\ngame.loadAll(`",
+                "trimStrings": [],
+                "placement": [
+                    1
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 1
+            },
+            {
+                "id": "46ef9897-4a2f-4b88-81a7-831c89fdf2ac",
+                "scriptName": "【DepressIon】修改AI回复 1.2",
+                "findRegex": "/([\\s\\S]*)/",
+                "replaceString": "$1\n<system>\n存档加载完毕。\n</system>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 1
+            },
+            {
+                "id": "e35f9c68-8de6-4ebe-a0e5-b74a721de4f9",
+                "scriptName": "【DepressIon】通用必备正则 v1.3",
+                "findRegex": "/((<(guifan|safety_check)>(?:(?!<(guifan|safety_check)>)[\\s\\S])*?<\\/(guifan|safety_check)>)|(<reminder>(?:[\\s\\S])*?<\\/reminder>)|([\\s\\S]*<\\/(analysis|thinking|think)>)|([\\s\\S]*(?=<game>)))/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -2040,10 +2159,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 453,
-                "LAST_RECEIVE_CHARS": 658,
-                "LAST_SEND_TOKENS": 19166,
-                "LAST_SEND_CHARS": 40279
+                "LAST_RECEIVE_TOKENS": 57,
+                "LAST_RECEIVE_CHARS": 81,
+                "LAST_SEND_TOKENS": 19584,
+                "LAST_SEND_CHARS": 41004
             }
         },
         "attachments": [],
@@ -2272,7 +2391,7 @@
         "min_p_openai": 0,
         "top_a_openai": 0,
         "repetition_penalty_openai": 1,
-        "stream_openai": true,
+        "stream_openai": false,
         "openai_max_context": 2000000,
         "openai_max_tokens": 8196,
         "wrap_in_quotes": false,
@@ -2901,19 +3020,6 @@
                 "injection_depth": 4,
                 "injection_order": 100,
                 "forbid_overrides": false
-            },
-            {
-                "identifier": "c0f51f15-60c0-4198-a3b0-117377d49bf0",
-                "system_prompt": false,
-                "enabled": false,
-                "marker": false,
-                "name": "0520尾部",
-                "role": "system",
-                "content": "<ctrl95>",
-                "injection_position": 0,
-                "injection_depth": 4,
-                "injection_order": 100,
-                "forbid_overrides": false
             }
         ],
         "prompt_order": [
@@ -3154,10 +3260,6 @@
                         "enabled": true
                     },
                     {
-                        "identifier": "c0f51f15-60c0-4198-a3b0-117377d49bf0",
-                        "enabled": false
-                    },
-                    {
                         "identifier": "967905ac-6fe9-4267-ace7-b58ac867799a",
                         "enabled": true
                     }
@@ -3214,7 +3316,7 @@
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
         "pollinations_model": "openai",
-        "custom_model": "[PAY]gemini-2.5-pro-preview-03-25",
+        "custom_model": "[PAY]gemini-2.5-pro-preview-05-06",
         "custom_url": "https://night38652-lunxun.hf.space/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",

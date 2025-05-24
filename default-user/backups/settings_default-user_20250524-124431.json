@@ -14,10 +14,10 @@
         "SelectedNavTab": "rm_button_characters",
         "AlertWI_灰风1.1.png": "true",
         "AlertWI_战败牧场.png": "true",
-        "AlertWI_机动战士高达-SEED V1.2.png": "true",
-        "AlertRegex_机动战士高达-SEED V1.2.png": "true",
         "AlertWI_全是萝莉的世界而我拥有无上权力.png": "true",
-        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true"
+        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true",
+        "AlertWI_机动战士高达-SEED V1.2.png": "true",
+        "AlertRegex_机动战士高达-SEED V1.2.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "林段",
@@ -335,7 +335,7 @@
         },
         "reasoning": {
             "name": "DeepSeek",
-            "auto_parse": false,
+            "auto_parse": true,
             "add_to_prompts": false,
             "auto_expand": false,
             "show_hidden": false,
@@ -1843,8 +1843,8 @@
         "character_allowed_regex": [
             "--老人滚动5天际模拟器v0.37--.png",
             "被程明催眠的淫乱世界.png",
-            "机动战士高达-SEED V1.2.png",
-            "全是萝莉的世界而我拥有无上权力.png"
+            "全是萝莉的世界而我拥有无上权力.png",
+            "机动战士高达-SEED V1.2.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -2040,10 +2040,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 453,
-                "LAST_RECEIVE_CHARS": 658,
-                "LAST_SEND_TOKENS": 19166,
-                "LAST_SEND_CHARS": 40279
+                "LAST_RECEIVE_TOKENS": 705,
+                "LAST_RECEIVE_CHARS": 1004,
+                "LAST_SEND_TOKENS": 23110,
+                "LAST_SEND_CHARS": 46034
             }
         },
         "attachments": [],
@@ -2199,8 +2199,8 @@
         "万界穿越系统2.0.png": [],
         "战败牧场.png": [],
         "default_Assistant.png": [],
-        "机动战士高达-SEED V1.2.png": [],
-        "全是萝莉的世界而我拥有无上权力.png": []
+        "全是萝莉的世界而我拥有无上权力.png": [],
+        "机动战士高达-SEED V1.2.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -2272,7 +2272,7 @@
         "min_p_openai": 0,
         "top_a_openai": 0,
         "repetition_penalty_openai": 1,
-        "stream_openai": true,
+        "stream_openai": false,
         "openai_max_context": 2000000,
         "openai_max_tokens": 8196,
         "wrap_in_quotes": false,
@@ -2901,19 +2901,6 @@
                 "injection_depth": 4,
                 "injection_order": 100,
                 "forbid_overrides": false
-            },
-            {
-                "identifier": "c0f51f15-60c0-4198-a3b0-117377d49bf0",
-                "system_prompt": false,
-                "enabled": false,
-                "marker": false,
-                "name": "0520尾部",
-                "role": "system",
-                "content": "<ctrl95>",
-                "injection_position": 0,
-                "injection_depth": 4,
-                "injection_order": 100,
-                "forbid_overrides": false
             }
         ],
         "prompt_order": [
@@ -3154,10 +3141,6 @@
                         "enabled": true
                     },
                     {
-                        "identifier": "c0f51f15-60c0-4198-a3b0-117377d49bf0",
-                        "enabled": false
-                    },
-                    {
                         "identifier": "967905ac-6fe9-4267-ace7-b58ac867799a",
                         "enabled": true
                     }
@@ -3214,7 +3197,7 @@
         "deepseek_model": "deepseek-chat",
         "xai_model": "grok-3-beta",
         "pollinations_model": "openai",
-        "custom_model": "[PAY]gemini-2.5-pro-preview-03-25",
+        "custom_model": "[PAY]gemini-2.5-pro-preview-05-06",
         "custom_url": "https://night38652-lunxun.hf.space/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",

@@ -20,7 +20,7 @@
     "zerooneai_model": "yi-large",
     "xai_model": "grok-3-beta",
     "pollinations_model": "openai",
-    "custom_model": "[PAY]gemini-2.5-pro-preview-05-06",
+    "custom_model": "[PAY]gemini-2.5-pro-preview-03-25",
     "custom_url": "https://night38652-lunxun.hf.space/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
@@ -54,7 +54,7 @@
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": false,
+    "stream_openai": true,
     "prompts": [
         {
             "name": "Nova⭐母亲📌",
@@ -667,6 +667,32 @@
             "injection_position": 0,
             "injection_depth": 4,
             "forbid_overrides": false
+        },
+        {
+            "identifier": "bfb78f28-fa41-4220-b175-7c7f3e688a15",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⭐格式强调2(看说明)",
+            "role": "system",
+            "content": "{{//把你最终输出的完整结果，去掉内容保留标签粘贴进来}}\n\n<format_confirmation_check>\n\n  注意：在输出完成后，请回顾并确认是否按照以下格式正确输出了内容（确认过程和结果无需展示，若有错误请直接更正）：\n\n{{正文等内容}}\n<details><summary>总结</summary>\n  {{总结}}\n</details>\n<details>\n  <summary>Nova</summary>\n  {{Nova}}\n</details>\n<对审查的战书>\n  {{对审查的战书}}\n</对审查的战书>\n\n</format_confirmation_check>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "c0f51f15-60c0-4198-a3b0-117377d49bf0",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "0520尾部",
+            "role": "system",
+            "content": "<ctrl95>",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -895,12 +921,20 @@
                     "enabled": true
                 },
                 {
+                    "identifier": "bfb78f28-fa41-4220-b175-7c7f3e688a15",
+                    "enabled": false
+                },
+                {
                     "identifier": "835fe974-b281-4077-9ef1-10ad92ce65ba",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "04666a5c-81da-4788-9481-6b21eaf41dc5",
                     "enabled": true
+                },
+                {
+                    "identifier": "c0f51f15-60c0-4198-a3b0-117377d49bf0",
+                    "enabled": false
                 },
                 {
                     "identifier": "967905ac-6fe9-4267-ace7-b58ac867799a",
