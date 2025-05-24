@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "WelcomePage_RecentChatsHidden": "true",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "WINavOpened": "true",
         "NavOpened": "false",
         "AlertWI_--老人滚动5天际模拟器v0.37--.png": "true",
@@ -17,13 +17,11 @@
         "AlertWI_机动战士高达-SEED V1.2.png": "true",
         "AlertRegex_机动战士高达-SEED V1.2.png": "true",
         "AlertWI_全是萝莉的世界而我拥有无上权力.png": "true",
-        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true",
-        "AlertWI_全是萝莉的世界而我拥有无上权力1.png": "true",
-        "AlertRegex_全是萝莉的世界而我拥有无上权力1.png": "true"
+        "AlertRegex_全是萝莉的世界而我拥有无上权力.png": "true"
     },
     "currentVersion": "1.12.14",
     "username": "林段",
-    "active_character": "全是萝莉的世界而我拥有无上权力1.png",
+    "active_character": "全是萝莉的世界而我拥有无上权力.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -1697,7 +1695,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -1744,8 +1742,7 @@
             "--老人滚动5天际模拟器v0.37--.png",
             "被程明催眠的淫乱世界.png",
             "机动战士高达-SEED V1.2.png",
-            "全是萝莉的世界而我拥有无上权力.png",
-            "全是萝莉的世界而我拥有无上权力1.png"
+            "全是萝莉的世界而我拥有无上权力.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -1941,10 +1938,10 @@
                 "tableConfigEventLength": "30字以内",
                 "tableConfigGrandSummaryRows": "5",
                 "tableConfigGrandSummaryLength": "200字以内",
-                "LAST_RECEIVE_TOKENS": 1359,
-                "LAST_RECEIVE_CHARS": 1861,
-                "LAST_SEND_TOKENS": 21808,
-                "LAST_SEND_CHARS": 38660
+                "LAST_RECEIVE_TOKENS": 1166,
+                "LAST_RECEIVE_CHARS": 1612,
+                "LAST_SEND_TOKENS": 23711,
+                "LAST_SEND_CHARS": 41866
             }
         },
         "attachments": [],
@@ -2101,8 +2098,7 @@
         "战败牧场.png": [],
         "机动战士高达-SEED V1.2.png": [],
         "全是萝莉的世界而我拥有无上权力.png": [],
-        "default_Assistant.png": [],
-        "全是萝莉的世界而我拥有无上权力1.png": []
+        "default_Assistant.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -3315,7 +3311,7 @@
                     },
                     {
                         "identifier": "4df2711b-2452-4f18-8bce-fc3ee97806f8",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "6e48fe9e-8fc7-4e17-a37c-4f80fc284137",
